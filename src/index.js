@@ -1,0 +1,10 @@
+import "./styles/reset.scss";
+import "./styles/fonts.scss";
+import "./styles/main.scss";
+import "./styles/header.scss";
+import "./styles/dream.scss";
+import "./styles/course.scss";
+import "./styles/about.scss";
+import "./styles/chat.scss";
+import "./styles/variant.scss";
+import "./styles/form-block.scss";

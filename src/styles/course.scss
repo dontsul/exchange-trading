@@ -1,0 +1,241 @@
+.course {
+  background-color: rgba(231, 246, 255, 0.34);
+  overflow: hidden;
+  position: relative;
+
+  &__map {
+    background-image: url("../images/course/world-map-bg.png");
+    transform: rotate(90deg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__wrap {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+    padding: 50px 24px 0 24px;
+
+    &__title {
+      color: #004796;
+      text-align: center;
+      font-family: Geogrotesque Cyr;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.16px;
+      text-transform: uppercase;
+      margin-bottom: 43.5px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+      width: 80%;
+      margin: 0 auto 101.5px auto;
+
+      &__item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 20px;
+
+        &__circle {
+          border-radius: 50%;
+          height: 55.7px;
+          width: 55.7px;
+          background-color: #0097f0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &__circle span {
+          color: #fff;
+          text-align: center;
+          font-family: TYPOGRAPH PRO;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 125%; /* 50px */
+          letter-spacing: 0.8px;
+        }
+
+        &__text {
+          color: #036;
+          font-family: Geogrotesque Cyr;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 125%; /* 20px */
+          letter-spacing: -0.16px;
+        }
+      }
+    }
+
+    &__wrap-btn {
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      position: absolute;
+      right: 0;
+      top: 540px;
+      background: linear-gradient(
+        156deg,
+        #53ea50 0%,
+        var(--primary-color) 100%
+      );
+      padding: 13.4px 21.25px 13.4px 9.7px;
+
+      &__btn {
+        color: #fff;
+        text-align: center;
+        font-family: Geogrotesque Cyr;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 85.1%; /* 16.169px */
+        width: 88.403px;
+        height: 88.403px;
+        border: 4px solid #fff;
+
+        background: radial-gradient(
+          139.66% 138.18% at 107.11% 22.34%,
+          var(--secondary-color) 7.55%,
+          rgba(0, 87, 255, 0.79) 90.54%
+        );
+        stroke-width: 4px;
+        stroke: #fff;
+        filter: drop-shadow(0px 4px 16px #000);
+        border-radius: 50%;
+      }
+    }
+
+    &__man {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__image {
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: -6px;
+      }
+    }
+  }
+
+  &__green {
+    position: absolute;
+    border-radius: 407.663px;
+    background: #4fea56;
+    filter: blur(175px);
+    left: 40%;
+    bottom: 100px;
+    width: 408px;
+    height: 408px;
+    z-index: -1;
+  }
+  &__blue {
+    border-radius: 447.535px;
+    background: #0e75e3;
+    filter: blur(175px);
+    position: absolute;
+    top: 0;
+    right: -400px;
+    width: 408px;
+    height: 408px;
+    z-index: 100;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .course {
+    &__map {
+      background-image: url("../images/course/world-map-bg.png");
+      transform: rotate(0);
+    }
+
+    &__wrap {
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
+
+      &__title {
+        font-size: 52px;
+        letter-spacing: 0.26px;
+        margin-bottom: 20px;
+        grid-column: span 2;
+        order: 1;
+      }
+
+      &__list {
+        order: 3;
+        margin: 0;
+        padding-top: 90px;
+        margin-bottom: 70px;
+        width: 70%;
+
+        &__item {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          gap: 20px;
+
+          &__text {
+            color: #036;
+            font-size: 24px;
+            line-height: 125%; /* 30px */
+            letter-spacing: 0.48px;
+          }
+        }
+      }
+
+      &__wrap-btn {
+        padding: 20px 40px 20 15px;
+        top: 410px;
+        border-top-left-radius: 42%;
+        border-bottom-left-radius: 42%;
+        width: 214px;
+
+        &__btn {
+          width: 136px;
+          height: 136px;
+        }
+      }
+      &__man {
+        order: 2;
+
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100%;
+
+        &__image {
+          width: 100%;
+          max-width: 480px;
+          height: 540px;
+          margin-bottom: -6px;
+        }
+      }
+    }
+
+    &__green {
+      left: 50%;
+      bottom: 100px;
+    }
+    &__blue {
+      top: -200px;
+      left: -200px;
+      right: inherit;
+    }
+  }
+}

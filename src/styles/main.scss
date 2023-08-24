@@ -1,0 +1,20 @@
+body {
+  width: 100%;
+  color: var(--text);
+
+  height: 100%;
+}
+
+:root {
+  --primary-color: #0098ed;
+  --secondary-color: rgba(11, 193, 98, 0.89);
+  --third-color: #061a2f;
+  --text: #ffffff;
+}
+
+.container {
+  padding: 0 19px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1038px;
+}
