@@ -1,36 +1,9 @@
 .variant {
   position: relative;
   overflow: hidden;
-  &__red-fone {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    top: 414px;
-    width: 600.689px;
-    height: 301.538px;
-    background: radial-gradient(
-      112.68% 112.61% at 42.64% -5.82%,
-      rgba(255, 168, 0, 0.75) 33.65%,
-      rgba(255, 0, 0, 0.75) 44.58%,
-      rgba(255, 71, 214, 0.75) 100%
-    );
-    filter: blur(238px);
-  }
-  &__green-fone {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    bottom: 400px;
-    width: 600.689px;
-    height: 301.538px;
 
-    transform: rotate(-53.201deg);
-    flex-shrink: 0;
-    background: linear-gradient(172deg, #53ea50 0%, var(--primary-color) 100%);
-    filter: blur(238px);
-  }
   &__wrap {
-    padding: 55px 0 156px 0;
+    padding: 55px 0 0 0;
     &__title {
       color: var(--third-color);
       text-align: center;
@@ -51,7 +24,7 @@
 
       &__red {
         padding: 42px 24px 53px 24px;
-
+        position: relative;
         border-radius: 44px;
         border: 3px solid #f91a23;
         background: rgba(255, 255, 255, 0.6);
@@ -109,9 +82,26 @@
           line-height: 125%; /* 25px */
           letter-spacing: 0.4px;
         }
+
+        &__red-fone {
+          z-index: -1;
+          position: absolute;
+          width: 100%;
+          // top: 300px;
+          width: 600.689px;
+          height: 301.538px;
+          background: radial-gradient(
+            112.68% 112.61% at 42.64% -5.82%,
+            rgba(255, 168, 0, 0.75) 33.65%,
+            rgba(255, 0, 0, 0.75) 44.58%,
+            rgba(255, 71, 214, 0.75) 100%
+          );
+          filter: blur(238px);
+        }
       }
 
       &__green {
+        position: relative;
         padding: 42px 24px 53px 24px;
         border-radius: 44px;
         border: 3px solid #0bc162;
@@ -170,6 +160,23 @@
           line-height: 125%; /* 25px */
           letter-spacing: 0.4px;
         }
+        &__green-fone {
+          z-index: -1;
+          position: absolute;
+          width: 100%;
+          top: 300px;
+          width: 600.689px;
+          height: 301.538px;
+
+          transform: rotate(-53.201deg);
+          flex-shrink: 0;
+          background: linear-gradient(
+            172deg,
+            #53ea50 0%,
+            var(--primary-color) 100%
+          );
+          filter: blur(238px);
+        }
       }
     }
   }
@@ -180,39 +187,7 @@
     padding-top: 101px;
     position: relative;
     overflow: hidden;
-    &__red-fone {
-      z-index: -1;
-      position: absolute;
-      width: 100%;
-      right: 50%;
-      width: 600.689px;
-      height: 301.538px;
-      background: radial-gradient(
-        112.68% 112.61% at 42.64% -5.82%,
-        rgba(255, 168, 0, 0.75) 33.65%,
-        rgba(255, 0, 0, 0.75) 44.58%,
-        rgba(255, 71, 214, 0.75) 100%
-      );
-      filter: blur(238px);
-    }
-    &__green-fone {
-      z-index: -1;
-      position: absolute;
-      width: 100%;
-      top: 414px;
-      left: 50%;
-      width: 600.689px;
-      height: 301.538px;
 
-      transform: rotate(-53.201deg);
-      flex-shrink: 0;
-      background: linear-gradient(
-        172deg,
-        #53ea50 0%,
-        var(--primary-color) 100%
-      );
-      filter: blur(238px);
-    }
     &__wrap {
       padding: 100px 0 0 0;
       &__title {
@@ -234,6 +209,23 @@
             display: grid;
             margin-bottom: 10px;
           }
+
+          &__red-fone {
+            z-index: -1;
+            position: absolute;
+            top: 300px;
+            left: -200px;
+            width: 100%;
+            width: 600.689px;
+            height: 301.538px;
+            background: radial-gradient(
+              112.68% 112.61% at 42.64% -5.82%,
+              rgba(255, 168, 0, 0.75) 33.65%,
+              rgba(255, 0, 0, 0.75) 44.58%,
+              rgba(255, 71, 214, 0.75) 100%
+            );
+            filter: blur(238px);
+          }
         }
 
         &__green {
@@ -242,6 +234,24 @@
           &__list {
             display: grid;
             margin-bottom: 10px;
+          }
+
+          &__green-fone {
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            top: 0px;
+            width: 600.689px;
+            height: 301.538px;
+
+            transform: rotate(-53.201deg);
+            flex-shrink: 0;
+            background: linear-gradient(
+              172deg,
+              #53ea50 0%,
+              var(--primary-color) 100%
+            );
+            filter: blur(238px);
           }
         }
       }
